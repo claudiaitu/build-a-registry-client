@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif; 
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  /* line-height: 1.7; */
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  line-height: 2.2;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 25px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li a:hover {
+  color: #777;
+}
+
+.navbar ul li a svg {
+  margin-right: 5px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  /* margin-bottom: 50px; */
+  padding: 0 20px;
+}
+
+.heading p {
+  color: #828282;
+}
+
+.goals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.goal {
+  background-color: #f4f4f4;
+  margin: 10px 0;
+  padding: 20px 0 10px;
+  position: relative;
+}
+
+.goal .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.form,
+.content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-family: inherit;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn svg {
+  margin-right: 8px;
+}
+
+.btn-reverse {
+  background: #fff;
+  color: #000;
+}
+
+.btn-block {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+.login-container-bg{
+  background-image: url(../public/images/wedding-mountains-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 70px);
+  padding-top: 50px;
+}
+
+.login-box{
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 30px;
+}
+
+.banner-sm{
+  background-image: url(../public/images/table-set-wedding.jpg);
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  position: relative;
+  color: #FFF;
+  padding: 0px;
+}
+
+.registry-container-bg{
+  background-image: url(../public/images/paper-1190631.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 70px);
+  padding-top: 50px;
+}
+
+.add-registry-bg{
+  background-image: url(../public/images/pattern-of-pressed-flowers-in-paper-2355060.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 70px);
+  padding-top: 50px;
+}
+.banner-sm .overlay-dark h1, .banner-sm .overlay-dark p {
+  color: white;
+}
+.banner-sm .overlay-dark {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form.form-box{
+  padding: 25px;
+  background-color: #f8f8ff;
+  padding: 25px;
+}
+
+.box-flex {
+  display: flex;
+  gap: 15px;
+  align-items: stretch;
+}
+.box {
+  border: 1px solid black;
+  padding: 25px 25px 75px 25px;
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box-flex .box p.description {
+  flex: 1;
+  font-size: 16px;
+  color: black;
+}
+.box-flex .box h2.title {
+  flex: 1;
+  font-size: 24px;
+  color: black;
+}
+
+.box-flex .box a {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  width: 200px;
+}
+
+.nav-link{
+  padding: 5px 5px;
+  margin: 0 5px;
+  border: 1px solid black;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 90%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
+}
+
+.prof {
+  color: black;
+  font-size: 40px;
+  /* text-align: center; */
+  font-weight: 700;
+  text-decoration: underline;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #f8f8ff;
+  margin-bottom: 20px;
+  
+}
+
+.items-wrap {
+  line-height: 1.5;
+  display: flex;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  
+}
+
+.items-wrap .item-box {
+  /* flex: 1; */
+  border: 1px solid black;
+  padding: 20px;
+  background-color: #f8f8ff;
+  
+}
+
+.item-box {
+  width: 20vw;
+  
+}
+
+.btns-wrap{
+  display: flex;
+  gap: 5px;
+}
+.btns-wrap btn {
+
+  flex: 1;
+} 
+.btns-wrap .btn-edit{
+  background-color: transparent;
+  color: black;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: black;
+}
