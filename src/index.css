@@ -339,7 +339,7 @@ h3 {
 }
 
 .item-box {
-  width: 40vw;
+  width: 32vw;
   
 }
 
@@ -367,4 +367,10 @@ h3 {
   height: 30vh;
   object-fit: cover;
   width: 30vw;
+}
+
+.todo-items {
+  border-style: double;
+  border-width: 8px;
+  border-radius: 8px;
 }

@@ -39,8 +39,10 @@ const ToDoList = () => {
         {user.tasks === 'null' ? <p>No Tasks</p> : (
            (
           user.tasks.map((task) => {
+            <div className="todo-items">
             return <p>{task.title}</p>;
           })
+          </div>
         )
         )}
       </div>
