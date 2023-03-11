@@ -151,6 +151,22 @@ h3 {
   justify-content: center;
 }
 
+.btn2{
+  padding: 10px 20px;
+  border: 1px solid #f8f8ff;
+  border-radius: 5px;
+  background: #f8f8ff;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn svg {
   margin-right: 8px;
 }

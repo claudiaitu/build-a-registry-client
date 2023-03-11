@@ -22,7 +22,7 @@ const Profile = () => {
     <>
     <div className='registry-container-bg'> 
     <div className='prof'>My Gifts:</div>
-    <Link className="btn" to={'/my-registry'}>Add an Item</Link>
+    <Link className="btn2" to={'/my-registry'}>Add an Item</Link>
     <div className="items-wrap">
       {user ? user.registries.map((registry) => {
         return (
