@@ -220,7 +220,8 @@ h3 {
   background-position: center center;
   height: calc(100vh - 70px);
   padding-top: 50px;
-  background-attachment: scroll;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
 }
 
 .add-registry-bg{
