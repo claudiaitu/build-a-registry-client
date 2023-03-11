@@ -325,9 +325,9 @@ h3 {
   line-height: 1.5;
   display: flex;
   gap: 20px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   flex-direction: row;
-  
+  padding: 10px;
 }
 
 .items-wrap .item-box {
