@@ -362,3 +362,11 @@ h3 {
   text-decoration: underline;
   color: black;
 }
+
+.item-img {
+  border-style: double;
+  border-width: 8px;
+  border-radius: 8px;
+  height: 30vh;
+  object-fit: cover
+}
